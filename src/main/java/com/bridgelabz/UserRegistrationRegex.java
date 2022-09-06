@@ -36,4 +36,14 @@ public class UserRegistrationRegex {
             System.out.println("Email is InValid");
         return match.matches();
     }
+
+    public boolean validMobileNo(String mobileNo) {
+        Pattern pattern = Pattern.compile("^[\\d]{2}\\s[\\d]{10}$");
+        Matcher match = pattern.matcher(mobileNo);
+        if (match.matches())
+            System.out.println("Mobile number is Valid");
+        else
+            System.out.println("Mobile number is InValid");
+        return match.matches();
+    }
 }

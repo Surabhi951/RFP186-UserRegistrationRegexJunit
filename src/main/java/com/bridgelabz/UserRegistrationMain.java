@@ -18,5 +18,10 @@ public class UserRegistrationMain {
         System.out.println("Enter email");
         String email = sc.next();
         userRegistrationRegex.validEmail(email);
+
+        System.out.println("Enter mobile number");
+        sc.nextLine();
+        String mobileNo = sc.nextLine();
+        userRegistrationRegex.validMobileNo(mobileNo);
     }
 }
