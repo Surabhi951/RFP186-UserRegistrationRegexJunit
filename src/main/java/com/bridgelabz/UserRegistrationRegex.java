@@ -76,4 +76,14 @@ public class UserRegistrationRegex {
             System.out.println("Password must have atleast one numeric number");
         return match.matches();
     }
+
+    public boolean validPasswordRule4(String passwordRule4) {
+        Pattern pattern = Pattern.compile("(?=.*[+._@!-])[0-9a-zA-Z@!+_.]{8,}");
+        Matcher match = pattern.matcher(passwordRule4);
+        if (match.matches())
+            System.out.println("Valid");
+        else
+            System.out.println("Password must has exactly one special character");
+        return match.matches();
+    }
 }
