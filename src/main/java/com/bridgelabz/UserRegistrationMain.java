@@ -39,5 +39,9 @@ public class UserRegistrationMain {
         System.out.println("Enter exactly one special character in password");
         String passwordRule4 = sc.next();
         userRegistrationRegex.validPasswordRule4(passwordRule4);
+
+        System.out.println("Enter email samples");
+        String validEmail = sc.next();
+        userRegistrationRegex.validEmailSample(validEmail);
     }
 }
