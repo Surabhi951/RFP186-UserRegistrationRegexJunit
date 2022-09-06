@@ -86,4 +86,14 @@ public class UserRegistrationRegex {
             System.out.println("Password must has exactly one special character");
         return match.matches();
     }
+
+    public boolean validEmailSample(String validEmail) {
+        Pattern pattern = Pattern.compile("^(?!.*@.*@)[a-z+_-]+(.[a-z0-9])*@[a-z0-9]+(.[a-z])*.[a-z]{2,}$");
+        Matcher match = pattern.matcher(validEmail);
+        if (match.matches())
+            System.out.println("Valid");
+        else
+            System.out.println("InValid");
+        return match.matches();
+    }
 }
