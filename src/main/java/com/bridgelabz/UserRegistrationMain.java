@@ -10,5 +10,9 @@ public class UserRegistrationMain {
         System.out.println("Enter first name");
         String firstName = sc.next();
         userRegistrationRegex.validFirstName(firstName);
+
+        System.out.println("Enter last name");
+        String lastName = sc.next();
+        userRegistrationRegex.validLastName(lastName);
     }
 }
