@@ -46,4 +46,14 @@ public class UserRegistrationRegex {
             System.out.println("Mobile number is InValid");
         return match.matches();
     }
+
+    public boolean validPasswordRule1(String passwordRule1) {
+        Pattern pattern = Pattern.compile("[0-9a-zA-Z@!+_.-]{8,}");
+        Matcher match = pattern.matcher(passwordRule1);
+        if (match.matches())
+            System.out.println("Valid");
+        else
+            System.out.println("Password must have 8 character");
+        return match.matches();
+    }
 }

@@ -23,5 +23,9 @@ public class UserRegistrationMain {
         sc.nextLine();
         String mobileNo = sc.nextLine();
         userRegistrationRegex.validMobileNo(mobileNo);
+
+        System.out.println("Enter password minimum 8 character");
+        String passwordRule1 = sc.next();
+        userRegistrationRegex.validPasswordRule1(passwordRule1);
     }
 }
