@@ -27,5 +27,9 @@ public class UserRegistrationMain {
         System.out.println("Enter password minimum 8 character");
         String passwordRule1 = sc.next();
         userRegistrationRegex.validPasswordRule1(passwordRule1);
+
+        System.out.println("Enter atleast one uppercase letter in password");
+        String passwordRule2 = sc.next();
+        userRegistrationRegex.validPasswordRule2(passwordRule2);
     }
 }
