@@ -31,5 +31,9 @@ public class UserRegistrationMain {
         System.out.println("Enter atleast one uppercase letter in password");
         String passwordRule2 = sc.next();
         userRegistrationRegex.validPasswordRule2(passwordRule2);
+
+        System.out.println("Enter atleast one numeric number in password");
+        String passwordRule3 = sc.next();
+        userRegistrationRegex.validPasswordRule3(passwordRule3);
     }
 }
